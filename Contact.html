@@ -25,22 +25,34 @@
         </section>
         <section class="form">
             <h2>Форма зворотного зв'язку</h2>
-            <form action="#" method="post">
-                <label for="name">Ім'я:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Повідомлення:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
+            <div class="form-row">
+                <input type="text" placeholder="Ім'я" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Повідомлення" rows="4" required></textarea>
                 <button type="submit">Надіслати</button>
-            </form>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Онлайн Магазин Петрович</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>Email: info@medguide.com</p>
+                <p>Телефон: +380 44 123 4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Швидкі посилання</h3>
+                <p><a href="Golovna.html">Головна</a></p>
+                <p><a href="Meducament.html">Список препаратів</a></p>
+                <p><a href="Contact.html">Контакти</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Про нас</h3>
+                <p>Онлайн Магазин Петрович – ваш надійний довідник у світі медицини.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

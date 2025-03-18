@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="Medecamentcss.css">
 </head>
 <body>
-	<header>
+    <header>
         <h1>Електронний довідник медичних препаратів</h1>
         <nav>
             <ul>
@@ -19,26 +19,41 @@
     </header>
     <main>
         <section>
-            <h2>Список препаратів</h2>
-            <article>
-                <ul> <li><a href="Ibuprofen.html">Ibuprofen</a></li> </ul>
-                <img src="ibf.jfif" alt="Фото препарату 1">
-                <p>Ібупрофен – похідне фенілпропіонової кислоти, що чинить протизапальну, аналгезуючу та жарознижувальну дію.</p>
-            </article>
-            <article>
-                <ul> <li><a href="Active-Vygil.html">Active Vygila</a></li> </ul>
-                <img src="vg.jfif" alt="Фото препарату 2">
-                <p>К дієтична добавка до раціону харчування з метою виведення токсичних речовин із організму при порушеннях травлення.</p>
-            </article>
+            <h2 style="text-align:center">Список препаратів</h2>
+            <div class="drug-container">
+                <div class="drug-card">
+                    <img src="ibf.jfif" alt="Ibuprofen">
+                    <h3>Ібупрофен</h3>
+                    <p>Протизапальний засіб, знеболююча та жарознижувальна дія.</p>
+                    <a href="Ibuprofen.html">Детальніше</a>
+                </div>
+                <div class="drug-card">
+                    <img src="vg.jfif" alt="Active Vygila">
+                    <h3>Active Vygila</h3>
+                    <p>Допомагає виведенню токсинів, покращує травлення.</p>
+                    <a href="Active-Vygil.html">Детальніше</a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <section id="contact">
-            <h3>Контакти</h3>
-            <p>Email: info@medguide.com</p>
-            <p>Телефон: +380 44 123 4567</p>
-        </section>
-        <p>Онлайн Магазин Петрович</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>Email: info@medguide.com</p>
+                <p>Телефон: +380 44 123 4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Швидкі посилання</h3>
+                <p><a href="Golovna.html">Головна</a></p>
+                <p><a href="Meducament.html">Список препаратів</a></p>
+                <p><a href="Contact.html">Контакти</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Про нас</h3>
+                <p>Онлайн Магазин Петрович – ваш надійний довідник у світі медицини.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
