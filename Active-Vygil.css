@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat; 
     background-attachment: fixed;
 }
-/* Бургер-меню */
+
 .burger-menu {
     display: none;
     cursor: pointer;
@@ -31,7 +31,7 @@ body {
     transition: 0.3s;
 }
 
-/* Стилі для мобільного меню */
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -52,14 +52,22 @@ body {
     .burger-menu {
         display: block;
     }
+    header h1 {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
 }
 header {
-    background: linear-gradient(to right, #0073e6, #005bb5);
+    background: linear-gradient(135deg, #0073e6, #004494);
     color: white;
     text-align: center;
     padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
+/* Навігація */
 nav {
     padding: 10px 0;
 }

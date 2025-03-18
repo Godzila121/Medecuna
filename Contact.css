@@ -31,7 +31,6 @@ body {
     transition: 0.3s;
 }
 
-/* Стилі для мобільного меню */
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -52,15 +51,31 @@ body {
     .burger-menu {
         display: block;
     }
+    header h1 {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .form-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+    }
 }
 
 
 header {
-    background: linear-gradient(to right, #0073e6, #005bb5);
+    background: linear-gradient(135deg, #0073e6, #004494);
     color: white;
     text-align: center;
     padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
+
 
 nav {
     padding: 10px 0;
@@ -155,7 +170,8 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: fit-content;
+    width: 100%;
+    max-width: 400px;
     margin: 20px auto;
 }
 
@@ -164,15 +180,30 @@ form {
     gap: 10px;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    padding: 10px;
 }
 
 input {
+    flex: 1;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
     width: 100%;
     max-width: 250px;
+    min-width: 150px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
 }
 
 textarea {
@@ -185,14 +216,6 @@ textarea {
     max-width: 520px;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin-top: 15px;
-}
-
 button {
     background-color: #007bff;
     color: white;
@@ -203,12 +226,23 @@ button {
     font-size: 16px;
     transition: background 0.3s, transform 0.2s;
     width: 150px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        max-width: 100%;
+    }
 }
 
 
