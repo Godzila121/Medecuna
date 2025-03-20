@@ -59,6 +59,14 @@ body {
         flex-direction: column;
         align-items: stretch;
         width: 100%;
+        margin-left: -20px;
+        
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Вирівнюємо всю форму зліва */
+        width: 100%;
     }
 
     input {
